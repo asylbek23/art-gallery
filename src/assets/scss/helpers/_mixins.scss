@@ -1,0 +1,6 @@
+@mixin cursor() {
+  cursor: pointer;
+  @include sm-block() {
+    cursor: auto;
+  }
+}

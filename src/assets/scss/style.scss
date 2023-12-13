@@ -1,0 +1,21 @@
+// Helpers
+@import "helpers/_reset.scss";
+@import "helpers/_adaptive-value";
+@import "helpers/_mixins";
+@import "helpers/_common.scss";
+
+// Modules
+@import "modules/_header.scss";
+
+// Pages
+@import "pages/home.scss";
+@import "pages/photo-page.scss";
+
+.favorites-page {
+  @include adaptive-value("padding-top", 50, 30, 1);
+
+  h1 {
+    font-weight: 700;
+    @include adaptive-value("font-size", 48, 30, 1);
+  }
+}
